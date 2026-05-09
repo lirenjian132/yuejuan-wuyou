@@ -37,9 +37,9 @@
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
       "shortcutName": "阅卷无忧",
-      "installerIcon": "renderer/icon.png",
-      "uninstallerIcon": "renderer/icon.png",
-      "installerHeaderIcon": "renderer/icon.png"
+      "installerIcon": "renderer/icon.ico",
+      "uninstallerIcon": "renderer/icon.ico",
+      "installerHeaderIcon": "renderer/icon.ico"
     }
   },
   "dependencies": {},
