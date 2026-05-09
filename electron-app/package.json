@@ -1,0 +1,50 @@
+{
+  "name": "yuejuan-wuyou",
+  "version": "0.1.0",
+  "description": "YueJuanWuYou - Auto Grading Desktop App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder",
+    "dist": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.yuejuan.wuyou",
+    "productName": "阅卷无忧",
+    "directories": {
+      "output": "dist"
+    },
+    "extraResources": [
+      {
+        "from": "resources/pipeline.exe",
+        "to": "."
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ],
+      "icon": "renderer/icon.png",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "阅卷无忧",
+      "installerIcon": "renderer/icon.png",
+      "uninstallerIcon": "renderer/icon.png",
+      "installerHeaderIcon": "renderer/icon.png"
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "33.4.0",
+    "electron-builder": "^26.0.12"
+  }
+}

@@ -1,0 +1,603 @@
+{
+  "exam_name": "初二物理第三章单元测试",
+  "total_students": 5,
+  "choice_avg": 14.4,
+  "fill_avg": 15.2,
+  "results": [
+    {
+      "page": 1,
+      "student_id": "20240041",
+      "side": "front",
+      "choice_answers": [
+        "B",
+        "C",
+        "B",
+        "D",
+        "B"
+      ],
+      "choice_score": 15,
+      "choice_max": 15,
+      "choice_details": [
+        {
+          "id": 1,
+          "user": "B",
+          "correct": "B",
+          "score": 3,
+          "max": 3,
+          "kp": "力的单位"
+        },
+        {
+          "id": 2,
+          "user": "C",
+          "correct": "C",
+          "score": 3,
+          "max": 3,
+          "kp": "牛顿第一定律"
+        },
+        {
+          "id": 3,
+          "user": "B",
+          "correct": "B",
+          "score": 3,
+          "max": 3,
+          "kp": "惯性"
+        },
+        {
+          "id": 4,
+          "user": "D",
+          "correct": "D",
+          "score": 3,
+          "max": 3,
+          "kp": "二力平衡"
+        },
+        {
+          "id": 5,
+          "user": "B",
+          "correct": "B",
+          "score": 3,
+          "max": 3,
+          "kp": "摩擦力"
+        }
+      ],
+      "fill_details": [
+        {
+          "id": 6,
+          "ocr_text": "惯性",
+          "correct": "惯性",
+          "score": 4.0,
+          "max": 4,
+          "kp": "牛顿第一定律",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 7,
+          "ocr_text": "牛顿",
+          "correct": "牛顿",
+          "score": 4.0,
+          "max": 4,
+          "kp": "力的单位",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 8,
+          "ocr_text": "9.8",
+          "correct": "9.8",
+          "score": 4.0,
+          "max": 4,
+          "kp": "重力",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 9,
+          "ocr_text": "相反",
+          "correct": "相反",
+          "score": 4.0,
+          "max": 4,
+          "kp": "二力平衡",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 10,
+          "ocr_text": "压刀",
+          "correct": "压力",
+          "score": 0,
+          "max": 4,
+          "kp": "摩擦力",
+          "similarity": 0.3,
+          "confidence": 0.925,
+          "status": "ocr_done",
+          "review_flag": true,
+          "ocr_suggestion": "压力"
+        }
+      ],
+      "fill_score": 16.0,
+      "fill_max": 20,
+      "total_scored": 31.0,
+      "total_max": 35
+    },
+    {
+      "page": 2,
+      "student_id": "20240044",
+      "side": "front",
+      "choice_answers": [
+        "B",
+        "C",
+        "B",
+        "D",
+        "B"
+      ],
+      "choice_score": 15,
+      "choice_max": 15,
+      "choice_details": [
+        {
+          "id": 1,
+          "user": "B",
+          "correct": "B",
+          "score": 3,
+          "max": 3,
+          "kp": "力的单位"
+        },
+        {
+          "id": 2,
+          "user": "C",
+          "correct": "C",
+          "score": 3,
+          "max": 3,
+          "kp": "牛顿第一定律"
+        },
+        {
+          "id": 3,
+          "user": "B",
+          "correct": "B",
+          "score": 3,
+          "max": 3,
+          "kp": "惯性"
+        },
+        {
+          "id": 4,
+          "user": "D",
+          "correct": "D",
+          "score": 3,
+          "max": 3,
+          "kp": "二力平衡"
+        },
+        {
+          "id": 5,
+          "user": "B",
+          "correct": "B",
+          "score": 3,
+          "max": 3,
+          "kp": "摩擦力"
+        }
+      ],
+      "fill_details": [
+        {
+          "id": 6,
+          "ocr_text": "惯性",
+          "correct": "惯性",
+          "score": 4.0,
+          "max": 4,
+          "kp": "牛顿第一定律",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 7,
+          "ocr_text": "牛顿",
+          "correct": "牛顿",
+          "score": 4.0,
+          "max": 4,
+          "kp": "力的单位",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 8,
+          "ocr_text": "9.8",
+          "correct": "9.8",
+          "score": 4.0,
+          "max": 4,
+          "kp": "重力",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 9,
+          "ocr_text": "相反",
+          "correct": "相反",
+          "score": 4.0,
+          "max": 4,
+          "kp": "二力平衡",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 10,
+          "ocr_text": "压刀",
+          "correct": "压力",
+          "score": 0,
+          "max": 4,
+          "kp": "摩擦力",
+          "similarity": 0.3,
+          "confidence": 0.925,
+          "status": "ocr_done",
+          "review_flag": true,
+          "ocr_suggestion": "压力"
+        }
+      ],
+      "fill_score": 16.0,
+      "fill_max": 20,
+      "total_scored": 31.0,
+      "total_max": 35
+    },
+    {
+      "page": 3,
+      "student_id": "20240017",
+      "side": "front",
+      "choice_answers": [
+        "B",
+        "C",
+        "B",
+        "D",
+        "B"
+      ],
+      "choice_score": 15,
+      "choice_max": 15,
+      "choice_details": [
+        {
+          "id": 1,
+          "user": "B",
+          "correct": "B",
+          "score": 3,
+          "max": 3,
+          "kp": "力的单位"
+        },
+        {
+          "id": 2,
+          "user": "C",
+          "correct": "C",
+          "score": 3,
+          "max": 3,
+          "kp": "牛顿第一定律"
+        },
+        {
+          "id": 3,
+          "user": "B",
+          "correct": "B",
+          "score": 3,
+          "max": 3,
+          "kp": "惯性"
+        },
+        {
+          "id": 4,
+          "user": "D",
+          "correct": "D",
+          "score": 3,
+          "max": 3,
+          "kp": "二力平衡"
+        },
+        {
+          "id": 5,
+          "user": "B",
+          "correct": "B",
+          "score": 3,
+          "max": 3,
+          "kp": "摩擦力"
+        }
+      ],
+      "fill_details": [
+        {
+          "id": 6,
+          "ocr_text": "惯性",
+          "correct": "惯性",
+          "score": 4.0,
+          "max": 4,
+          "kp": "牛顿第一定律",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 7,
+          "ocr_text": "牛顿",
+          "correct": "牛顿",
+          "score": 4.0,
+          "max": 4,
+          "kp": "力的单位",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 8,
+          "ocr_text": "9.81",
+          "correct": "9.8",
+          "score": 0,
+          "max": 4,
+          "kp": "重力",
+          "similarity": 0.514,
+          "confidence": 0.997,
+          "status": "ocr_done"
+        },
+        {
+          "id": 9,
+          "ocr_text": "相反",
+          "correct": "相反",
+          "score": 4.0,
+          "max": 4,
+          "kp": "二力平衡",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 10,
+          "ocr_text": "压刀",
+          "correct": "压力",
+          "score": 0,
+          "max": 4,
+          "kp": "摩擦力",
+          "similarity": 0.3,
+          "confidence": 0.925,
+          "status": "ocr_done",
+          "review_flag": true,
+          "ocr_suggestion": "压力"
+        }
+      ],
+      "fill_score": 12.0,
+      "fill_max": 20,
+      "total_scored": 27.0,
+      "total_max": 35
+    },
+    {
+      "page": 4,
+      "student_id": "20240001",
+      "side": "front",
+      "choice_answers": [
+        "B",
+        "C",
+        "B",
+        "D",
+        "B"
+      ],
+      "choice_score": 15,
+      "choice_max": 15,
+      "choice_details": [
+        {
+          "id": 1,
+          "user": "B",
+          "correct": "B",
+          "score": 3,
+          "max": 3,
+          "kp": "力的单位"
+        },
+        {
+          "id": 2,
+          "user": "C",
+          "correct": "C",
+          "score": 3,
+          "max": 3,
+          "kp": "牛顿第一定律"
+        },
+        {
+          "id": 3,
+          "user": "B",
+          "correct": "B",
+          "score": 3,
+          "max": 3,
+          "kp": "惯性"
+        },
+        {
+          "id": 4,
+          "user": "D",
+          "correct": "D",
+          "score": 3,
+          "max": 3,
+          "kp": "二力平衡"
+        },
+        {
+          "id": 5,
+          "user": "B",
+          "correct": "B",
+          "score": 3,
+          "max": 3,
+          "kp": "摩擦力"
+        }
+      ],
+      "fill_details": [
+        {
+          "id": 6,
+          "ocr_text": "惯性",
+          "correct": "惯性",
+          "score": 4.0,
+          "max": 4,
+          "kp": "牛顿第一定律",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 7,
+          "ocr_text": "牛顿",
+          "correct": "牛顿",
+          "score": 4.0,
+          "max": 4,
+          "kp": "力的单位",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 8,
+          "ocr_text": "9.8",
+          "correct": "9.8",
+          "score": 4.0,
+          "max": 4,
+          "kp": "重力",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 9,
+          "ocr_text": "相反",
+          "correct": "相反",
+          "score": 4.0,
+          "max": 4,
+          "kp": "二力平衡",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 10,
+          "ocr_text": "压刀",
+          "correct": "压力",
+          "score": 0,
+          "max": 4,
+          "kp": "摩擦力",
+          "similarity": 0.3,
+          "confidence": 0.925,
+          "status": "ocr_done",
+          "review_flag": true,
+          "ocr_suggestion": "压力"
+        }
+      ],
+      "fill_score": 16.0,
+      "fill_max": 20,
+      "total_scored": 31.0,
+      "total_max": 35
+    },
+    {
+      "page": 5,
+      "student_id": "20240041",
+      "side": "front",
+      "choice_answers": [
+        "B",
+        "A",
+        "B",
+        "D",
+        "B"
+      ],
+      "choice_score": 12,
+      "choice_max": 15,
+      "choice_details": [
+        {
+          "id": 1,
+          "user": "B",
+          "correct": "B",
+          "score": 3,
+          "max": 3,
+          "kp": "力的单位"
+        },
+        {
+          "id": 2,
+          "user": "A",
+          "correct": "C",
+          "score": 0,
+          "max": 3,
+          "kp": "牛顿第一定律"
+        },
+        {
+          "id": 3,
+          "user": "B",
+          "correct": "B",
+          "score": 3,
+          "max": 3,
+          "kp": "惯性"
+        },
+        {
+          "id": 4,
+          "user": "D",
+          "correct": "D",
+          "score": 3,
+          "max": 3,
+          "kp": "二力平衡"
+        },
+        {
+          "id": 5,
+          "user": "B",
+          "correct": "B",
+          "score": 3,
+          "max": 3,
+          "kp": "摩擦力"
+        }
+      ],
+      "fill_details": [
+        {
+          "id": 6,
+          "ocr_text": "惯性",
+          "correct": "惯性",
+          "score": 4.0,
+          "max": 4,
+          "kp": "牛顿第一定律",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 7,
+          "ocr_text": "牛顿",
+          "correct": "牛顿",
+          "score": 4.0,
+          "max": 4,
+          "kp": "力的单位",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 8,
+          "ocr_text": "9.8",
+          "correct": "9.8",
+          "score": 4.0,
+          "max": 4,
+          "kp": "重力",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 9,
+          "ocr_text": "相反",
+          "correct": "相反",
+          "score": 4.0,
+          "max": 4,
+          "kp": "二力平衡",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 10,
+          "ocr_text": "压刀",
+          "correct": "压力",
+          "score": 0,
+          "max": 4,
+          "kp": "摩擦力",
+          "similarity": 0.3,
+          "confidence": 0.925,
+          "status": "ocr_done",
+          "review_flag": true,
+          "ocr_suggestion": "压力"
+        }
+      ],
+      "fill_score": 16.0,
+      "fill_max": 20,
+      "total_scored": 28.0,
+      "total_max": 35
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "exam_name": "双面测试-正面选择背面填空",
+  "subject": "物理",
+  "grade": "测试班",
+  "date": "2026-05-12",
+  "paper_size": "A4",
+  "ab_variant": "A",
+  "questions": [
+    {"id": 1, "type": "choice", "content": "下列哪个是力的单位？", "options": ["A. 千克","B. 牛顿","C. 米","D. 秒"], "answer": "B", "score": 3, "knowledge_point": "力的单位"},
+    {"id": 2, "type": "choice", "content": "物体在平衡力作用下将保持什么状态？", "options": ["A. 一定静止","B. 一定匀速直线运动","C. 静止或匀速直线运动","D. 加速运动"], "answer": "C", "score": 3, "knowledge_point": "牛顿第一定律"},
+    {"id": 3, "type": "choice", "content": "关于惯性下列说法正确的是？", "options": ["A. 速度大惯性大","B. 质量大惯性大","C. 静止物体没有惯性","D. 地球上物体才有惯性"], "answer": "B", "score": 3, "knowledge_point": "惯性"}
+  ],
+  "back_questions": [
+    {"id": 4, "type": "fill", "content": "牛顿第一定律又称为____定律。", "answer": "惯性", "score": 4, "knowledge_point": "牛顿第一定律"},
+    {"id": 5, "type": "fill", "content": "力的国际单位是____。", "answer": "牛顿", "score": 4, "knowledge_point": "力的单位"}
+  ]
+}

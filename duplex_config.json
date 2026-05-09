@@ -1,0 +1,17 @@
+{
+  "exam_name": "双面测试-背面填空",
+  "subject": "物理",
+  "grade": "测试班",
+  "date": "2026-05-12",
+  "paper_size": "A4",
+  "ab_variant": "A",
+  "questions": [
+    {"id": 1, "type": "choice", "content": "Q1?", "options": ["A.a","B.b","C.c","D.d"], "answer": "A", "score": 3, "knowledge_point": "kp1"},
+    {"id": 2, "type": "choice", "content": "Q2?", "options": ["A.a","B.b","C.c","D.d"], "answer": "B", "score": 3, "knowledge_point": "kp2"},
+    {"id": 3, "type": "fill", "content": "填空1", "answer": "答案一", "score": 4, "knowledge_point": "kpf1"}
+  ],
+  "back_questions": [
+    {"id": 4, "type": "fill", "content": "背面填空1", "answer": "惯性", "score": 4, "knowledge_point": "牛顿第一定律"},
+    {"id": 5, "type": "fill", "content": "背面填空2", "answer": "牛顿", "score": 4, "knowledge_point": "力的单位"}
+  ]
+}

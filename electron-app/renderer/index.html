@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'">
+  <title>阅卷无忧</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========== 顶部导航 ========== -->
+<header class="app-header">
+  <div class="header-left">
+    <h1 class="app-title">📝 阅卷无忧</h1>
+    <span class="app-version">v0.1.0</span>
+  </div>
+  <nav class="tab-bar">
+    <button class="tab-btn active" data-tab="grade">📋 批改</button>
+    <button class="tab-btn" data-tab="wrongbook">📖 错题本</button>
+    <button class="tab-btn" data-tab="analysis">📊 分析</button>
+    <button class="tab-btn" data-tab="settings">⚙️ 设置</button>
+  </nav>
+</header>
+
+<!-- ========== 主内容区 ========== -->
+<main class="app-main">
+
+  <!-- 页面1：批改 -->
+  <section id="tab-grade" class="tab-content active">
+    <div class="page-layout">
+
+      <!-- 左侧控制面板 -->
+      <aside class="control-panel">
+        <div class="panel-card">
+          <h2 class="panel-title">📂 文件选择</h2>
+
+          <div class="form-group">
+            <label>考试配置</label>
+            <div class="file-picker">
+              <input type="text" id="configPath" placeholder="选择 exam_config.json..." readonly>
+              <button id="btnPickConfig" class="btn btn-sm">浏览</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>答题卡/试卷 PDF</label>
+            <div class="file-picker">
+              <input type="text" id="pdfPath" placeholder="选择扫描PDF..." readonly>
+              <button id="btnPickPdf" class="btn btn-sm">浏览</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>输出目录</label>
+            <div class="file-picker">
+              <input type="text" id="outputDir" placeholder="结果输出目录..." readonly>
+              <button id="btnPickOutput" class="btn btn-sm">选择</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-card">
+          <h2 class="panel-title">🚀 操作</h2>
+          <button id="btnStart" class="btn btn-primary btn-block">开始批改</button>
+          <button id="btnReport" class="btn btn-block" disabled>📄 生成成绩报告</button>
+          <button id="btnImportDB" class="btn btn-block" disabled>💾 导入错题本</button>
+          <button id="btnExportGrades" class="btn btn-block" disabled>📥 导出成绩</button>
+          <button id="btnExportWrong" class="btn btn-block" disabled>📥 导出错题</button>
+        </div>
+
+        <div class="panel-card" id="progressPanel" style="display:none">
+          <h2 class="panel-title">⏳ 进度</h2>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <pre class="progress-log" id="progressLog"></pre>
+        </div>
+      </aside>
+
+      <!-- 右侧结果区 -->
+      <section class="result-area">
+        <div class="panel-card result-panel">
+          <div class="result-header">
+            <h2 class="panel-title">📊 批改结果</h2>
+            <span id="resultSummary" class="result-summary"></span>
+          </div>
+          <div class="table-wrap">
+            <table id="resultTable" class="data-table">
+              <thead>
+                <tr>
+                  <th>学号</th>
+                  <th>姓名</th>
+                  <th>选择</th>
+                  <th>填空</th>
+                  <th>总分</th>
+                  <th>状态</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="empty-row"><td colspan="6">尚未批改，请选择文件后点击「开始批改」</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="detailPanel" class="detail-panel" style="display:none"></div>
+        </div>
+      </section>
+
+    </div>
+  </section>
+
+  <!-- 页面2：错题本 -->
+  <section id="tab-wrongbook" class="tab-content">
+    <div class="page-layout">
+      <aside class="control-panel">
+        <div class="panel-card">
+          <h2 class="panel-title">🔍 查询条件</h2>
+          <div class="form-group">
+            <label>学号（可选）</label>
+            <input type="text" id="wbStudentId" placeholder="如：2026001">
+          </div>
+          <div class="form-group">
+            <label>知识点（可选）</label>
+            <input type="text" id="wbKnowledgePoint" placeholder="如：牛顿第一定律">
+          </div>
+          <button id="btnQueryWrong" class="btn btn-primary btn-block">查询错题</button>
+        </div>
+      </aside>
+      <section class="result-area">
+        <div class="panel-card result-panel">
+          <h2 class="panel-title">📖 错题记录</h2>
+          <div class="table-wrap">
+            <table id="wrongTable" class="data-table">
+              <thead>
+                <tr>
+                  <th>学号</th>
+                  <th>题号</th>
+                  <th>题目</th>
+                  <th>正确答案</th>
+                  <th>学生答案</th>
+                  <th>知识点</th>
+                  <th>得分</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="empty-row"><td colspan="7">请设置查询条件后点击「查询错题」</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- 页面3：数据分析 -->
+  <section id="tab-analysis" class="tab-content">
+    <div class="page-layout">
+      <aside class="control-panel">
+        <div class="panel-card">
+          <h2 class="panel-title">📊 选择考试</h2>
+          <div class="form-group">
+            <label>考试记录</label>
+            <select id="examSelect" class="form-select">
+              <option value="">-- 加载中... --</option>
+            </select>
+          </div>
+          <button id="btnLoadAnalysis" class="btn btn-primary btn-block">加载分析</button>
+        </div>
+        <div class="panel-card" id="qualityCards" style="display:none">
+          <h2 class="panel-title">📈 质量指标</h2>
+          <div id="qualityGrid" class="quality-grid"></div>
+        </div>
+      </aside>
+      <section class="result-area" style="display:flex;flex-direction:column;gap:16px;">
+        <div class="panel-card">
+          <h2 class="panel-title">🎯 知识点得分率</h2>
+          <div style="display:flex;justify-content:center;">
+            <canvas id="radarChart" width="400" height="400"></canvas>
+          </div>
+        </div>
+        <div class="panel-card">
+          <h2 class="panel-title">📊 分数分布</h2>
+          <div style="display:flex;justify-content:center;">
+            <canvas id="barChart" width="500" height="250"></canvas>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- 页面4：设置 -->
+  <section id="tab-settings" class="tab-content">
+    <div class="settings-layout">
+      <div class="panel-card settings-card">
+        <h2 class="panel-title">💾 路径设置</h2>
+        <div class="form-group">
+          <label>默认输出目录</label>
+          <div class="file-picker">
+            <input type="text" id="setOutputDir" placeholder="批改结果输出目录">
+            <button id="btnSetOutput" class="btn btn-sm">浏览</button>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>数据库路径</label>
+          <div class="file-picker">
+            <input type="text" id="setDbPath" placeholder="错题本数据库路径">
+            <button id="btnSetDb" class="btn btn-sm">浏览</button>
+          </div>
+        </div>
+        <button id="btnSaveSettings" class="btn btn-primary">保存设置</button>
+      </div>
+
+      <div class="panel-card settings-card">
+        <h2 class="panel-title">📄 扫描模式</h2>
+        <div class="form-group">
+          <label style="display:flex;align-items:center;gap:8px;cursor:pointer;">
+            <input type="checkbox" id="chkDuplex" style="width:auto;">
+            双面扫描（正反面配对，背面无学号填涂区）
+          </label>
+        </div>
+      </div>
+
+      <div class="panel-card settings-card">
+        <h2 class="panel-title">👥 学生名单</h2>
+        <div class="form-group">
+          <label>导入CSV名单（学号,姓名,班级）</label>
+          <div class="file-picker">
+            <input type="text" id="rosterPath" placeholder="选择 students.csv..." readonly>
+            <button id="btnPickRoster" class="btn btn-sm">浏览</button>
+          </div>
+        </div>
+        <button id="btnImportRoster" class="btn btn-primary">导入名单</button>
+        <span id="rosterStatus" style="font-size:12px;color:var(--text-secondary);margin-left:8px;"></span>
+      </div>
+
+      <div class="panel-card settings-card">
+        <h2 class="panel-title">ℹ️ 关于</h2>
+        <div class="about-info">
+          <p><strong>阅卷无忧</strong> v0.1.0</p>
+          <p>全自动阅卷系统 — 选择题 + 填空题批改</p>
+          <p>技术栈：Electron + Python (OpenCV + RapidOCR + jieba)</p>
+          <p>数据全本地处理，不上传任何信息。</p>
+          <p>License: MIT</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ========== 底部状态栏 ========== -->
+<footer class="app-footer">
+  <span id="statusText" class="status-text">🟢 就绪</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+venv/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Electron / Node
+electron-app/node_modules/
+electron-app/dist/
+electron-app/build_log*.txt
+electron-app/python_diag.log
+electron-app/resources/pipeline.exe
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Project outputs
+e2e_final/
+e2e_fresh/
+e2e_test_output/
+test_fix_555/
+*.pdf
+*.db
+*.json
+!electron-app/package.json
+!electron-app/package-lock.json
+!exam_config.json
+!duplex_config.json
+!exam_config_complex.json
+!exam_config_template.json
+!tests/fixtures/exam_config.json
+!tests/fixtures/duplex_config.json
+!tests/fixtures/expected_results.json
+!tests/fixtures/duplex_expected_results.json
+!tests/fixtures/students.csv
+grade_report.md
+grade_results.json
+duplex_results.json
+duplex_results_fix.json
+
+# Build artifacts
+build/
+.spec

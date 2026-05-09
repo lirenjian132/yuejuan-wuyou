@@ -1,0 +1,95 @@
+{
+  "exam_name": "初二物理第三章单元测试",
+  "subject": "物理",
+  "grade": "初二(3)班",
+  "date": "2026-05-12",
+  "paper_size": "A4",
+  "ab_variant": "A",
+  "questions": [
+    {
+      "id": 1,
+      "type": "choice",
+      "content": "下列哪个是力的单位？",
+      "options": ["A. 千克", "B. 牛顿", "C. 米", "D. 秒"],
+      "answer": "B",
+      "score": 3,
+      "knowledge_point": "力的单位"
+    },
+    {
+      "id": 2,
+      "type": "choice",
+      "content": "物体在平衡力作用下，将保持什么状态？",
+      "options": ["A. 一定静止", "B. 一定匀速直线运动", "C. 静止或匀速直线运动", "D. 加速运动"],
+      "answer": "C",
+      "score": 3,
+      "knowledge_point": "牛顿第一定律"
+    },
+    {
+      "id": 3,
+      "type": "choice",
+      "content": "关于惯性，下列说法正确的是？",
+      "options": ["A. 物体速度大惯性大", "B. 物体质量大惯性大", "C. 静止物体没有惯性", "D. 地球上的物体才有惯性"],
+      "answer": "B",
+      "score": 3,
+      "knowledge_point": "惯性"
+    },
+    {
+      "id": 4,
+      "type": "choice",
+      "content": "二力平衡的条件不包括？",
+      "options": ["A. 大小相等", "B. 方向相反", "C. 作用在同一物体", "D. 作用在不同物体"],
+      "answer": "D",
+      "score": 3,
+      "knowledge_point": "二力平衡"
+    },
+    {
+      "id": 5,
+      "type": "choice",
+      "content": "摩擦力总是阻碍物体的？",
+      "options": ["A. 运动", "B. 相对运动", "C. 静止", "D. 加速"],
+      "answer": "B",
+      "score": 3,
+      "knowledge_point": "摩擦力"
+    },
+    {
+      "id": 6,
+      "type": "fill",
+      "content": "牛顿第一定律又称为____定律。",
+      "answer": "惯性",
+      "score": 4,
+      "knowledge_point": "牛顿第一定律"
+    },
+    {
+      "id": 7,
+      "type": "fill",
+      "content": "力的国际单位是____，简称____。",
+      "answer": ["牛顿", "牛"],
+      "score": 4,
+      "knowledge_point": "力的单位"
+    },
+    {
+      "id": 8,
+      "type": "fill",
+      "content": "重力加速度g的近似值为____N/kg。",
+      "answer": "9.8",
+      "score": 4,
+      "knowledge_point": "重力"
+    },
+    {
+      "id": 9,
+      "type": "fill",
+      "content": "二力平衡的条件是：大小____、方向____、作用在____直线上。",
+      "answer": ["相等", "相反", "同一"],
+      "score": 6,
+      "knowledge_point": "二力平衡"
+    },
+    {
+      "id": 10,
+      "type": "fill",
+      "content": "滑动摩擦力的大小与____和接触面的粗糙程度有关。",
+      "answer": "压力",
+      "score": 4,
+      "knowledge_point": "摩擦力"
+    }
+  ]
+}

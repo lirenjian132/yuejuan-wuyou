@@ -1,0 +1,203 @@
+{
+  "exam_name": "双面测试-正面选择背面填空",
+  "total_students": 3,
+  "choice_avg": 6.0,
+  "fill_avg": 8.0,
+  "results": [
+    {
+      "page": "1,2",
+      "student_id": "20240041",
+      "choice_answers": [
+        "B",
+        "C",
+        "B"
+      ],
+      "choice_score": 9,
+      "choice_max": 9,
+      "choice_details": [
+        {
+          "id": 1,
+          "user": "B",
+          "correct": "B",
+          "score": 3,
+          "max": 3,
+          "kp": "力的单位"
+        },
+        {
+          "id": 2,
+          "user": "C",
+          "correct": "C",
+          "score": 3,
+          "max": 3,
+          "kp": "牛顿第一定律"
+        },
+        {
+          "id": 3,
+          "user": "B",
+          "correct": "B",
+          "score": 3,
+          "max": 3,
+          "kp": "惯性"
+        }
+      ],
+      "fill_details": [
+        {
+          "id": 4,
+          "ocr_text": "惯性",
+          "correct": "惯性",
+          "score": 4.0,
+          "max": 4,
+          "kp": "牛顿第一定律",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 5,
+          "ocr_text": "牛顿",
+          "correct": "牛顿",
+          "score": 4.0,
+          "max": 4,
+          "kp": "力的单位",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        }
+      ],
+      "fill_score": 8.0,
+      "fill_max": 8,
+      "total_scored": 17.0,
+      "total_max": 17
+    },
+    {
+      "page": "3,4",
+      "student_id": "20240005",
+      "choice_answers": [
+        "B",
+        "A",
+        "D"
+      ],
+      "choice_score": 3,
+      "choice_max": 9,
+      "choice_details": [
+        {
+          "id": 1,
+          "user": "B",
+          "correct": "B",
+          "score": 3,
+          "max": 3,
+          "kp": "力的单位"
+        },
+        {
+          "id": 2,
+          "user": "A",
+          "correct": "C",
+          "score": 0,
+          "max": 3,
+          "kp": "牛顿第一定律"
+        },
+        {
+          "id": 3,
+          "user": "D",
+          "correct": "B",
+          "score": 0,
+          "max": 3,
+          "kp": "惯性"
+        }
+      ],
+      "fill_details": [
+        {
+          "id": 4,
+          "ocr_text": "惯性",
+          "correct": "惯性",
+          "score": 4.0,
+          "max": 4,
+          "kp": "牛顿第一定律",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 5,
+          "ocr_text": "牛顿",
+          "correct": "牛顿",
+          "score": 4.0,
+          "max": 4,
+          "kp": "力的单位",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        }
+      ],
+      "fill_score": 8.0,
+      "fill_max": 8,
+      "total_scored": 11.0,
+      "total_max": 17
+    },
+    {
+      "page": "5,6",
+      "student_id": "20240029",
+      "choice_answers": [
+        "E",
+        "C",
+        "B"
+      ],
+      "choice_score": 6,
+      "choice_max": 9,
+      "choice_details": [
+        {
+          "id": 1,
+          "user": "E",
+          "correct": "B",
+          "score": 0,
+          "max": 3,
+          "kp": "力的单位"
+        },
+        {
+          "id": 2,
+          "user": "C",
+          "correct": "C",
+          "score": 3,
+          "max": 3,
+          "kp": "牛顿第一定律"
+        },
+        {
+          "id": 3,
+          "user": "B",
+          "correct": "B",
+          "score": 3,
+          "max": 3,
+          "kp": "惯性"
+        }
+      ],
+      "fill_details": [
+        {
+          "id": 4,
+          "ocr_text": "惯性",
+          "correct": "惯性",
+          "score": 4.0,
+          "max": 4,
+          "kp": "牛顿第一定律",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        },
+        {
+          "id": 5,
+          "ocr_text": "牛顿",
+          "correct": "牛顿",
+          "score": 4.0,
+          "max": 4,
+          "kp": "力的单位",
+          "similarity": 1.0,
+          "confidence": 1.0,
+          "status": "ocr_done"
+        }
+      ],
+      "fill_score": 8.0,
+      "fill_max": 8,
+      "total_scored": 14.0,
+      "total_max": 17
+    }
+  ]
+}

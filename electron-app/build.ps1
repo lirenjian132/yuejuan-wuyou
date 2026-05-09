@@ -1,0 +1,10 @@
+Set-Location "C:\Users\李仁建\Desktop\AI生活随笔\2026.5.5\项目测试文件夹\electron-app"
+$env:ELECTRON_MIRROR = "https://npmmirror.com/mirrors/electron/"
+Write-Host "正在打包阅卷无忧..."
+Write-Host "首次需下载Electron(~80MB)，请耐心等待..."
+npx electron-builder --win 2>&1 | Tee-Object -FilePath build_log2.txt
+Write-Host ""
+Write-Host "=================================="
+Write-Host "打包完成！查看 dist 目录"
+Write-Host "=================================="
+Read-Host "按Enter退出"
